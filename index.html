@@ -142,7 +142,7 @@
             
             <!-- Brand Logo / Identity -->
             <a href="#" onclick="scrollToSection('#', event)" class="flex items-center space-x-3 group">
-                <div class="w-10 h-10 rounded-full bg-brand-crimson dark:bg-brand-gold/20 border border-brand-crimson dark:border-brand-gold/40 flex items-center justify-center font-serif text-lg font-bold text-white dark:text-brand-gold transition-transform group-hover:scale-105">
+                <div class="w-10 h-10 rounded-full bg-brand-crimson dark:bg-stone-800 border border-brand-crimson dark:border-[#B08B48]/70 flex items-center justify-center font-serif text-lg font-bold text-white dark:text-brand-gold transition-transform group-hover:scale-105">
                     <span class="block leading-none" style="transform: translateY(1.5px);">萃</span>
                 </div>
                 <div>
@@ -954,8 +954,8 @@
                 </p>
                 
                 <div class="mt-6 flex flex-col sm:flex-row justify-center gap-3">
-                    <a id="directWaBtn" href="https://wa.me/6596449966" target="_blank" class="bg-[#05A35C] text-white text-xs font-bold px-6 py-2.5 rounded-xl inline-block">
-                        直接发起 WhatsApp 沟通 (+65 96449966)
+                    <a id="directWaBtn" href="https://wa.me/6588613043" target="_blank" class="bg-[#05A35C] text-white text-xs font-bold px-6 py-2.5 rounded-xl inline-block">
+                        直接发起 WhatsApp 沟通 (+65 88613043)
                     </a>
                     <button type="button" onclick="closeModal()" class="bg-stone-200 dark:bg-neutral-800 text-neutral-800 dark:text-white text-xs font-medium px-5 py-2.5 rounded-xl">
                         关闭
@@ -1289,13 +1289,13 @@
                                 `• RW调理阶段: ${status}\n` +
                                 `• 意向权益/偏好: ${preference}`;
 
-                const waUrl = `https://wa.me/6596449966?text=${encodeURIComponent(message)}`;
+                const waUrl = `https://wa.me/6588613043?text=${encodeURIComponent(message)}`;
 
                 document.getElementById('directWaBtn').href = waUrl;
                 window.open(waUrl, '_blank');
 
                 document.getElementById('successDescription').innerText = 
-                    `感谢您，${name}。我们已为您生成申请信息并拉起 WhatsApp (+65 96449966)。若未能自动跳转，请点击下方按钮。`;
+                    `感谢您，${name}。我们已为您生成申请信息并拉起 WhatsApp (+65 88613043)。若未能自动跳转，请点击下方按钮。`;
             } else {
                 // Web form: send via FormSubmit (emails the application to the team)
                 const submitBtns = document.querySelectorAll('#modalForm button[type="submit"]');
